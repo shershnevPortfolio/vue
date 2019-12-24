@@ -1,23 +1,17 @@
-
+<template>
+  <div>
+    <img src="../assets/img/map.png" alt="map">
+  </div>
+</template>
 
 <script>
 // @ is an alias to /src
-  Vue.component('map', {
-  data: function () {
-    return {
-      count: 0
-    }
-  },
 
-  template:
-    `
-      <div>
-          <img src="@/img/map.png" alt="map">
-      </div>
-    `
-})
-
-
-
+export default {
+  name: 'map',
+  props: {
+    msg: String
+  }
+}
 
 </script>
