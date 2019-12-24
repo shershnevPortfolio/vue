@@ -1,7 +1,8 @@
+
 <template>
   <div class="page-inner">
-    <MapBlock></MapBlock>
-    <Social></Social>
+    <MapBlock path='map.png'></MapBlock>
+    <Social ></Social>
   </div>
 </template>
 

@@ -1,16 +1,21 @@
 <template>
   <div>
-    <img src="../assets/img/map.png" alt="map">
+    <img :src="require(`../assets/img/${path}`)" alt="">
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
 
 export default {
+
   name: 'mapBlock',
   props: {
-    url: String
+    path: String
+  },
+  data () {
+    return {
+
+    }
   }
 }
 
