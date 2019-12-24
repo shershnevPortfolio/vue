@@ -10,7 +10,7 @@
 export default {
   name: 'mapBlock',
   props: {
-    msg: String
+    url: String
   }
 }
 
