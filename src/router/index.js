@@ -1,7 +1,9 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
-import Test from '../views/Test.vue'
+import Сompetition from '../views/Сompetition.vue'
+import Members from '../views/Members.vue'
+import Testdrive from '../views/Testdrive.vue'
 
 Vue.use(VueRouter)
 
@@ -12,9 +14,19 @@ const routes = [
     component: Home
   },
   {
-    path: '/test',
-    name: 'Test',
-    component: Test
+    path: '/competition',
+    name: 'competition',
+    component: Сompetition
+  },
+  {
+    path: '/members',
+    name: 'members',
+    component: Members
+  },
+  {
+    path: '/testdrive',
+    name: 'testdrive',
+    component: Testdrive
   }
 ]
 

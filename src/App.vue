@@ -1,8 +1,10 @@
 <template>
   <div id="app">
     <div id="nav">
-      <router-link  to="/">Home</router-link>
-      <router-link to="/test">Test</router-link>
+      <router-link  to="/">Главная</router-link>
+      <router-link to="/competition">Конкурс</router-link>
+      <router-link to="/members">Участники</router-link>
+      <router-link to="/testdrive">Тест-драйв</router-link>
     </div>
     <router-view/>
   </div>

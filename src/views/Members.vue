@@ -1,13 +1,13 @@
 <template>
-  <div id="test">
-      <map></map>
+  <div>
+    Members
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import Map from '../components/Map.vue'
+
 export default {
-  name: 'home'
+  name: 'members'
 }
 </script>
