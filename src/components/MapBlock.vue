@@ -1,6 +1,6 @@
 <template>
   <div>
-    <img :src="require(`../assets/img/${path}`)" alt="">
+    <img :src="require(`@/assets/img/${path}`)" alt="">
   </div>
 </template>
 
@@ -11,11 +11,6 @@ export default {
   name: 'mapBlock',
   props: {
     path: String
-  },
-  data () {
-    return {
-
-    }
   }
 }
 

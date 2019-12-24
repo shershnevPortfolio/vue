@@ -18,5 +18,6 @@ export default {
     MapBlock,
     Social
   }
+  
 }
 </script>
