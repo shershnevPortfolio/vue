@@ -1,16 +1,16 @@
 <template>
-    <Map></Map>
+    <MapBlock></MapBlock>
 </template>
 
 <script>
 
-import Map from '../components/Map.vue'
+import MapBlock from '../components/MapBlock.vue'
 
 export default {
   name: 'home',
 
   components: {
-    Map
+    MapBlock
   }
 }
 </script>
