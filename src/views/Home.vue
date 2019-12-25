@@ -1,13 +1,22 @@
-<template>
-  <div>
 
+<template>
+  <div class="page-inner">
+    <MapBlock path='map.png'></MapBlock>
+    <Social ></Social>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
+
+import MapBlock from '../components/MapBlock.vue'
+import Social from '../components/Social.vue'
 
 export default {
-  name: 'home'
+  name: 'home',
+
+  components: {
+    MapBlock,
+    Social
+  }
 }
 </script>
