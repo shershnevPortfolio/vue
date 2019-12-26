@@ -2,8 +2,7 @@
   <div class="page-inner member-page-inner">
     <div class = "test2"></div>
     <div class="members">
-
-      <template v-for="member in members">
+      <template v-for="member in paginatedMembers">
         <!-- {{item.name}} -->
           <Member
             :name='member.name'
@@ -13,7 +12,14 @@
           </Member>
       </template>
     </div>
-    <Pagination :members='members'></Pagination>
+    <Pagination
+      @next ='nextPage'
+      @prev ='prevPage'
+      :members='members'
+      :page='page'
+      :perPage='perPage'
+    >
+    </Pagination>
     <Social></Social>
   </div>
 </template>
@@ -52,9 +58,27 @@ export default {
 
       ],
       page: 1,
-      perPage: 9,
-      pages: []
+      perPage: 5
+    }
+  },
+  computed: {
+    paginatedMembers: function () {
+      return this.members.slice((this.page * this.perPage) - this.perPage, this.page * this.perPage)
+    }
+  },
+  watch: {
+    test2 () {
+      console.log('asf')
+    }
+  },
+  methods: {
+    nextPage () {
+      this.page++
+    },
+    prevPage () {
+      this.page--
     }
   }
+
 }
 </script>
