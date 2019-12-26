@@ -4,8 +4,11 @@
   </div>
 </template>
 
-<script>
+<style lang="sass">
+  @import './src/assets/components/social.sass'
+</style>
 
+<script>
 export default {
 
   name: 'mapBlock',

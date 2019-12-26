@@ -13,4 +13,5 @@
 
 <style lang="sass">
   @import './src/assets/index.sass'
+  @import '../node_modules/@fortawesome/fontawesome-free/css/all.min.css'
 </style>

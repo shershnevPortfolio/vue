@@ -1,12 +1,25 @@
 <template>
   <div class="pagination" style="color: white;">
-      <button style="width:50px; height:20px;" @click="paginate('prev')"></button>
-    <span style="margin-right: 4px">{{pages.join(' ')}}</span>
-    <span v-if="pages.reverse()[0] != Math.ceil(members.length/perPage)">... {{Math.ceil(members.length/perPage)}}</span>
-    <button style="width:50px; height:20px;" @click="paginate('next')"></button>
+      <button class="pagination__button" @click="paginate('prev')"><i class="fas fa-angle-left pagination__angle"></i></button>
+    <div>
+      <template
+        v-for="page in pages"
+      >
+          <span class="pagination__page" :key="page">{{page}}</span>
+
+      </template>
+    </div>
+
+    <span>
+      <span   v-if="pages.reverse()[0] < Math.ceil(members.length/perPage)" class="pagination__page pagination__page--test">...</span>
+      <span  class="pagination__page ">{{Math.ceil(members.length/perPage)}}</span>
+    </span>
+    <button class="pagination__button" @click="paginate('next')"><i class="fas fa-angle-right pagination__angle"></i></button>
   </div>
 </template>
-
+<style lang="sass">
+  @import './src/assets/components/pagination.sass'
+</style>
 <script>
 export default {
 
