@@ -17,6 +17,7 @@
       @prev ='prevPage'
       :members='members'
       :page='page'
+      :pages='pages'
       :perPage='perPage'
     >
     </Pagination>
@@ -58,7 +59,8 @@ export default {
 
       ],
       page: 1,
-      perPage: 5
+      perPage: 1,
+      pages: []
     }
   },
   computed: {
@@ -66,17 +68,27 @@ export default {
       return this.members.slice((this.page * this.perPage) - this.perPage, this.page * this.perPage)
     }
   },
-  watch: {
-    test2 () {
-      console.log('asf')
-    }
-  },
+
   methods: {
     nextPage () {
-      if (Math.ceil(this.members.length / this.perPage) > this.page) { this.page++ }
+      if (Math.ceil(this.members.length / this.perPage) > this.page) {
+        this.page++
+        this.getPages()
+      }
     },
     prevPage () {
-      if (this.page > 1) { this.page-- }
+      if (this.page > 1) {
+        this.page--
+        this.getPages()
+      }
+    },
+
+    getPages () {
+      this.pages = []
+      for (let i = 0; i < 3; i++) {
+        if ((this.page + i) > this.members.length / this.perPage) { break }
+        this.pages.push(` ${this.page + i}`)
+      }
     }
   }
 
