@@ -73,10 +73,10 @@ export default {
   },
   methods: {
     nextPage () {
-      this.page++
+      if (Math.ceil(this.members.length / this.perPage) > this.page) { this.page++ }
     },
     prevPage () {
-      this.page--
+      if (this.page > 1) { this.page-- }
     }
   }
 
