@@ -68,6 +68,9 @@ export default {
       return this.members.slice((this.page * this.perPage) - this.perPage, this.page * this.perPage)
     }
   },
+  mounted () {
+    this.getPages()
+  },
 
   methods: {
     nextPage () {
