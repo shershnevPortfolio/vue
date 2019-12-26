@@ -59,7 +59,7 @@ export default {
 
       ],
       page: 1,
-      perPage: 8,
+      perPage: 1,
       pages: []
     }
   },
@@ -90,7 +90,7 @@ export default {
     getPages () {
       this.pages = []
       for (let i = 0; i < 3; i++) {
-        if ((this.page + i) !== this.members.length / this.perPage) {
+        if ((this.page + i) < this.members.length / this.perPage) {
           this.pages.push(` ${this.page + i}`)
         }
       }
