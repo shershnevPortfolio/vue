@@ -11,7 +11,7 @@
     </div>
 
     <span>
-      <span   v-if="pages.reverse()[0] < Math.ceil(members.length/perPage)" class="pagination__page pagination__page--test">...</span>
+      <span   v-if="pages.reverse()[0] < Math.ceil(members.length/perPage)  " class="pagination__page pagination__page--test">...</span>
       <span  class="pagination__page ">{{Math.ceil(members.length/perPage)}}</span>
     </span>
     <button class="pagination__button" @click="paginate('next')"><i class="fas fa-angle-right pagination__angle"></i></button>

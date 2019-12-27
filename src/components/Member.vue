@@ -1,6 +1,6 @@
 <template>
   <div class="member ">
-    <img :src="require(`@/assets/img/members/member-${id}.png`)" alt="">
+    <img class="member__img" :src="require(`@/assets/img/members/member-${id}.png`)" alt="">
     <div class="member__info">
       <span>{{id + '.'}}</span>
       <span>{{name}}</span>
@@ -22,5 +22,4 @@ export default {
     id: String
   }
 }
-
 </script>

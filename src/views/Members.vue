@@ -1,5 +1,6 @@
 <template>
   <div class="page-inner member-page-inner">
+      <Nav></Nav>
     <div class = "test2"></div>
     <div class="members">
       <template v-for="member in paginatedMembers">
@@ -11,8 +12,7 @@
             >
           </Member>
       </template>
-    </div>
-    <Pagination
+       <Pagination
       @next ='nextPage'
       @prev ='prevPage'
       :members='members'
@@ -21,13 +21,16 @@
       :perPage='perPage'
     >
     </Pagination>
+    </div>
+
     <Social></Social>
   </div>
 </template>
 
-<style lang="sass">
+<style  lang="sass">
  @import './src/assets/view/members.sass'
 </style>
+
 <script>
 // @ is an alias to /src
 import Member from '../components/Member.vue'
@@ -59,7 +62,7 @@ export default {
 
       ],
       page: 1,
-      perPage: 1,
+      perPage: 12,
       pages: []
     }
   },

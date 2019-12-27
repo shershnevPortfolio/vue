@@ -1,12 +1,7 @@
 <template>
   <div id="app">
     <!-- <div style="width: 100px; height: 160px; background: white; position: absolute; top:0; right: 50px"></div> -->
-    <div id="nav">
-      <router-link class="nav__main-link nav__link"  to="/">Главная</router-link>
-      <router-link class="nav__link" to="/competition">Конкурс</router-link>
-      <router-link class="nav__link" to="/members">Участники</router-link>
-      <router-link class="nav__link" to="/testdrive">Тест-драйв</router-link>
-    </div>
+    <Nav></Nav>
     <router-view/>
   </div>
 </template>
@@ -15,3 +10,25 @@
   @import './src/assets/index.sass'
   @import '../node_modules/@fortawesome/fontawesome-free/css/all.min.css'
 </style>
+<script>
+import Nav from '../src/components/Nav.vue'
+export default {
+  data () {
+    return {
+      classes: [
+
+      ]
+    }
+  },
+  methods: {
+    test (test) {
+      console.log(test)
+    }
+
+  },
+  components: {
+    Nav
+  }
+
+}
+</script>
