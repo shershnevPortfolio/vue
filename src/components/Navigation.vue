@@ -1,5 +1,5 @@
 <template>
-  <div id="nav" :class="classes">
+  <div id="nav">
         <router-link class="nav__main-link nav__link"  to="/" >Главная</router-link>
         <router-link class="nav__link" to="/competition">Конкурс</router-link>
         <router-link class="nav__link" to="/members">Участники</router-link>
@@ -9,7 +9,7 @@
 
 <script>
 export default {
-  name: 'nav',
+  name: 'navigation',
   props: {
     name: String,
     id: String

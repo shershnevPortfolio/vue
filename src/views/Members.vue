@@ -1,7 +1,7 @@
 <template>
   <div class="page-inner member-page-inner">
-      <Nav></Nav>
     <div class = "test2"></div>
+    <span @click="update()">asddddddddd</span>
     <div class="members">
       <template v-for="member in paginatedMembers">
         <!-- {{item.name}} -->
@@ -43,7 +43,6 @@ export default {
     Social,
     Pagination
   },
-
   data () {
     return {
       members: [
@@ -97,6 +96,10 @@ export default {
           this.pages.push(` ${this.page + i}`)
         }
       }
+    },
+
+    update () {
+      this.$emit('update')
     }
   }
 

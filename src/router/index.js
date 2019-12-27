@@ -11,22 +11,26 @@ const routes = [
   {
     path: '/',
     name: 'home',
-    component: Home
+    component: Home,
+    meta: { nav: 'mainNav' }
   },
   {
     path: '/competition',
     name: 'competition',
-    component: Сompetition
+    component: Сompetition,
+    meta: { nav: 'mainNav' }
   },
   {
     path: '/members',
     name: 'members',
-    component: Members
+    component: Members,
+    meta: { nav: 'blackNav' }
   },
   {
     path: '/testdrive',
     name: 'testdrive',
-    component: Testdrive
+    component: Testdrive,
+    meta: { nav: 'mainNav' }
   }
 ]
 
