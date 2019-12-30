@@ -3,7 +3,7 @@
   <div class="page-inner">
     <div class="content">
       <pushTheLimit></pushTheLimit>
-      <MapBlock path='map.png'></MapBlock>
+      <MapBlock class="map" path='map.png'></MapBlock>
     </div>
     <Social ></Social>
   </div>
