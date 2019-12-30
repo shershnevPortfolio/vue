@@ -5,9 +5,11 @@
     text-decoration: none
     z-index: 1
 
-#nav
-    margin-left: -25px
-
+.nav
+    // margin-left: -25px   
+    padding: 21px 61px
+    color: black  
+    
 #app
     height: 100vh
     background-image: url(assets/img/back.png)
@@ -19,6 +21,7 @@
 
 .page-inner
     height: 100%
+    padding: 0px 61px
     display: flex
     flex-direction: column
     justify-content: space-between
@@ -36,7 +39,13 @@
 .router-link-exact-active
     background-color: #ffffff
 
-.nav__main-link
-    color: 
+.members-nav
+    background-color: #000000
+    
+    .router-link-exact-active
+        background: transparent
+        opacity: 1
 
-
+.members-nav__link
+    color: #ffffff
+    opacity: .4
