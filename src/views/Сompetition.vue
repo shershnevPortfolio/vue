@@ -17,7 +17,7 @@
 </template>
 <style lang="sass">
   @import  './src/assets/view/competition.sass'
-  @import  './src/assets/components/mapBlock.sass'
+  @import  './src/assets/components/imageBlock.sass'
 </style>
 
 <script>
