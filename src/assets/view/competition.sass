@@ -2,9 +2,10 @@
     display: flex
     justify-content: center
     align-items: center
+    position: relative
+    height: 100%
 
 .competition__title
-    position: absolute
     text-align: center
     color: #e10522
     font-family: "Kievit Pro"
@@ -22,4 +23,15 @@
         font-size: 21px
         font-weight: 700
         letter-spacing: 0.53px
+
+.competition__wrapper
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    align-items: center
+    position: absolute
+    z-index: 2
+    height: 100%
+    width: 100%
+    
     
