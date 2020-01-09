@@ -1,17 +1,17 @@
 
 <template>
   <div class="page-inner">
-    <div class="content">
+    <div class="content home">
       <pushTheLimit></pushTheLimit>
-      <MapBlock class="map" path='map.png'></MapBlock>
+      <ImageBlock class="map" path='map.png'></ImageBlock>
     </div>
-    <Social ></Social>
+    <Social class="home__social"></Social>
   </div>
 </template>
 
 <script>
 
-import MapBlock from '../components/MapBlock.vue'
+import ImageBlock from '../components/ImageBlock.vue'
 import Social from '../components/Social.vue'
 import pushTheLimit from '../components/pushTheLimit.vue'
 
@@ -19,7 +19,7 @@ export default {
   name: 'home',
 
   components: {
-    MapBlock,
+    ImageBlock,
     Social,
     pushTheLimit
   }

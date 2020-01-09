@@ -5,6 +5,7 @@
 </template>
 
 <style lang="sass">
+  @import './src/assets/components/social.sass'
 </style>
 
 <script>
