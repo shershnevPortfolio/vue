@@ -1,22 +1,27 @@
 
 <template>
   <div class="page-inner">
-    <MapBlock path='map.png'></MapBlock>
-    <Social ></Social>
+    <div class="content home">
+      <pushTheLimit></pushTheLimit>
+      <ImageBlock class="map" path='map.png'></ImageBlock>
+    </div>
+    <Social class="home__social"></Social>
   </div>
 </template>
 
 <script>
 
-import MapBlock from '../components/MapBlock.vue'
+import ImageBlock from '../components/ImageBlock.vue'
 import Social from '../components/Social.vue'
+import pushTheLimit from '../components/pushTheLimit.vue'
 
 export default {
   name: 'home',
 
   components: {
-    MapBlock,
-    Social
+    ImageBlock,
+    Social,
+    pushTheLimit
   }
 }
 </script>

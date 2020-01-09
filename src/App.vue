@@ -19,7 +19,6 @@ export default {
   },
   computed: {
     layout () {
-      console.log(this.$route.meta)
       return this.$route.meta.nav
     }
   }

@@ -11,7 +11,7 @@
 <script>
 export default {
 
-  name: 'imageBlock',
+  name: 'ImageBlock',
   props: {
     path: String
   }

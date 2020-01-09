@@ -1,6 +1,7 @@
 <template>
-  <div>
-    <img :src="require(`@/assets/img/${path}`)" alt="">
+  <div class="limit">
+    <img :src="require(`@/assets/img/limit.png`)" alt="">
+    <img :src="require(`@/assets/img/cars.png`)" alt="">
   </div>
 </template>
 
@@ -11,7 +12,7 @@
 <script>
 export default {
 
-  name: 'imageBlock',
+  name: 'pushTheLimit',
   props: {
     path: String
   }
