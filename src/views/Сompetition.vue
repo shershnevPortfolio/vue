@@ -4,7 +4,7 @@
         <!-- <pushTheLimit></pushTheLimit> -->
         <!-- limit.png -->
         <div class="competition__wrapper">
-          <ImageBlock  path='limit.png'></ImageBlock>
+          <ImageBlock class="competition__limit" path='limit.png'></ImageBlock>
           <h1 class="competition__title">
               СНОУБОРД
           </h1>
@@ -17,6 +17,7 @@
 </template>
 <style lang="sass">
   @import  './src/assets/view/competition.sass'
+  @import  './src/assets/components/mapBlock.sass'
 </style>
 
 <script>
